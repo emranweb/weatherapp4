@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content =" A Responsivse Weather Application with Next 5 Days Forcast">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/open-weather-icons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Weather APP</title>
+</head>
+
+<body>
+  <div class="weather-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 mx-md-auto">
+          <div class="weather__inner">
+            <!-- locatoin -->
+            <div class="location">
+              <div class="row m-2 pt-2">
+                <div class="col-6">
+                  <h3 class="city float-right"></h3>
+                </div>
+                <div class="col-6">
+                  <h3 class="state float-left"></h3>
+                </div>
+              </div>
+            </div>
+            <!-- end location -->
+            <!-- weather icon -->
+            <div class="weather-icon">
+              <div class="icon"></div>
+              <h4 class="desc"></h4>
+            </div>
+            <!-- end weather-->
+            <div class="weather-details text-center">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h1 class="float-sm-right">
+                    <span class="temp"></span>
+                    <span>
+                      <sup>o</sup>
+                    </span>
+                  </h1>
+                </div>
+                <div class="col-sm-6">
+                  <div class="right__area float-sm-left">
+                    <div class="humidity">
+                      <i class="material-icons">opacity</i>
+                      <h2 class="humidity_text"></h2>
+                    </div>
+                    <div class="wind">
+                      <i class="material-icons">near_me</i>
+                      <h2 class="wind_text"></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--*************************-->
+            <div class="forecast">
+              <div class="single day-1">
+              </div>
+              <div class="single day-2">
+              </div>
+              <div class="single day-3">
+              </div>
+              <div class="single day-4">
+              </div>
+              <div class="single day-5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

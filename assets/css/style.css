@@ -1,0 +1,180 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  background: -webkit-gradient(linear, left top, left bottom, from(#485bbd9c), to(#485bbdb3)), url(../img/weather-min-bg-min.jpg);
+  background: linear-gradient(#485bbd9c, #485bbdb3), url(../img/weather-bg-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.material-icons {
+  font-size: 2em;
+}
+
+.icon i {
+  font-size: 3em;
+  margin-right: 15px;
+}
+
+/*********************************/
+
+.weather__inner {
+  background: #485bbdc4;
+  -webkit-box-shadow: 0px 0px 10px #34428d;
+          box-shadow: 0px 0px 10px #34428d;
+  margin-top: 50px;
+}
+
+.location {
+  margin-left: 50px;
+}
+
+.weather-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desc {
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+
+.humidity,
+.wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 15px 0px;
+}
+
+.humidity i,
+.wind i {
+  margin-right: 15px;
+}
+
+.forecast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single {
+  padding: 20px 0px;
+  text-align: center;
+  border-top: 1px solid #7588c5;
+  width: 100%;
+}
+
+.f-icon i {
+  font-size: 3em;
+}
+
+.single h2 {
+  font-size: 1.8em;
+}
+
+.single h3 {
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width:576px) {
+  /*********************************/
+  h1 {
+    font-size: 5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  /*********************************/
+  .icon i {
+    font-size: 6em;
+    margin-right: 40px;
+  }
+  /*********************************/
+  .desc {
+    font-size: 1.5em;
+    text-transform: capitalize;
+  }
+  /*********************************/
+  /*********************************/
+  .humidity i,
+  .wind i {
+    margin-right: 15px;
+    font-size: 2em;
+  }
+  /*********************************/
+  .humidity_text,
+  .wind_text {
+    font-size: 2em;
+  }
+  /*********************************/
+  .forecast {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    background: #4355b2db;
+  }
+  /*********************************/
+  .single {
+    padding: 20px 0px;
+    text-align: center;
+  }
+}
